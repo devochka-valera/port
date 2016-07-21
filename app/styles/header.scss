@@ -1,0 +1,29 @@
+                 .nav {
+                     &__header {
+                         .container {
+                             padding: 0px;
+                         }
+                     }
+                     &__main-menu {
+                         background-color: #41B3CD;
+                         min-height: 55px;
+                         color: #FFFFFF;
+                         ul {
+                             width: 100%;
+                             text-align: center;
+                             line-height: 23px;
+                             font-weight: 400;
+                             margin: 0px;
+                         }
+                         ul li {
+                             display: inline-block;
+                             padding: 15px 20px;
+                             font-size: 16px;
+                         }
+                     }
+                 }
+                 
+                 .container,
+                 .container-fluid {
+                     border: 1px solid salmon;
+                 }
