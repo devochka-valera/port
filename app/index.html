@@ -14,17 +14,16 @@
     <!-- endbuild -->
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/reset.css">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,500' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
     <header>
-        <div class="container-fluid nav__header">
+        <div class="container-fluid  nav__header">
             <div class="container">
                 <div class="nav__main-menu">
                     <ul>
@@ -41,26 +40,111 @@
             </div>
         </div>
     </header>
+
     <div class="main__backround--top"></div>
-    <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-        (function(b, o, i, l, e, r) {
-            b.GoogleAnalyticsObject = l;
-            b[l] || (b[l] = function() {
-                (b[l].q = b[l].q || []).push(arguments)
-            });
-            b[l].l = +new Date;
-            e = o.createElement(i);
-            r = o.getElementsByTagName(i)[0];
-            e.src = 'https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e, r)
-        }(window, document, 'script', 'ga'));
-        ga('create', 'UA-XXXXX-X');
-        ga('send', 'pageview');
-    </script>
+
+    <section class="container  about">
+        <div class="about__hero">
+            <img class="about__logo" src="images/me.jpg">
+            <div>
+                <h1>Valeria Ryabenko</h1>
+                <h4>Front-end developer</h4>
+            </div>
+            <div class="about__button">
+                <a href="#contact" class="button  button--accent">Hire me</a>
+                <a href="#" class="button  button--primary">Dowland CV</a>
+            </div>
+        </div>
+        <div class="row about__content">
+            <div class="about__main col-md-6">
+                <h3 class="card-header">About</h3>
+                <p class="about__sub-header">Hello, I am Jordan Doe, Photographer, Web Designer, Speaker and Writer</p>
+                <p>
+                    Aenean nonummy hendrerit mauris. Donec sit Phasellus portFusce suscipit varius mium sociis natoque penatibus et magnis dis parturent montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odiMorbi nunc odio, gravida at, cursus nec, luctus.
+                </p>
+            </div>
+            <div class="about__basic  col-md-5  col-md-offset-1">
+                <h3 class="card-header">Basic information</h3>
+                <table>
+                    <tr>
+                        <td>Address:</td>
+                        <td>43/R/13 Creative Town, Bangladesh</td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth:</td>
+                        <td>1 January, 1992</td>
+                    </tr>
+                    <tr>
+                        <td>Place of Birth:</td>
+                        <td>Dhaka, Bangladesh</td>
+                    </tr>
+                    <tr>
+                        <td>Language</td>
+                        <td>English, German, French</td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td>Male</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <div class="container  skill">
+        <div class="skill__content  col-md-6">
+            <h3 class="card-header">Skills</h3>
+            <ul>
+                <li>
+                    <h5 class="skill__name">WordPress</h5>
+                    <div class="skillbar">
+                        <div class="skillbar__line"></div>
+                        <div class="skillbar__percert">40%</div>
+                    </div>
+                </li>
+
+                <li>
+                    <h5 class="skill__name">WordPress</h5>
+                    <div class="skillbar">
+                        <div class="skillbar__line"></div>
+                        <div class="skillbar__percert">40%</div>
+                    </div>
+                </li>
+
+                <li>
+                    <h5 class="skill__name">WordPress</h5>
+                    <div class="skillbar">
+                        <div class="skillbar__line"></div>
+                        <div class="skillbar__percert">40%</div>
+                    </div>
+                </li>
+
+                <li>
+                    <h5 class="skill__name">WordPress</h5>
+                    <div class="skillbar">
+                        <div class="skillbar__line"></div>
+                        <div class="skillbar__percert">40%</div>
+                    </div>
+                </li>
+
+                <li>
+                    <h5 class="skill__name">WordPress</h5>
+                    <div class="skillbar">
+                        <div class="skillbar__line"></div>
+                        <div class="skillbar__percert">40%</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="skill__image-container  col-md-6">
+            <img class="skill__image" src="images/skill-picture.jpg">
+        </div>
+    </div>
+
+
+
+
+
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
@@ -84,11 +168,4 @@
     <!-- endbuild -->
 </body>
 
-</html>
-
-</html>
-
-</html>
-
-</html>
 </html>
