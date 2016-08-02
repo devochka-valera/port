@@ -1,7 +1,7 @@
 @import "variables.scss";
 .skill {
     margin-bottom: 50px;
-    background-color: $cart-color;
+    background-color: $card-color;
     position: relative;
     &__content {
         padding: 25px 65px;
@@ -26,7 +26,7 @@
 .skillbar {
     position: relative;
     &::before {
-        background-color: $background-color;
+        background-color: #F1F1F1;
         height: 10px;
         width: 100%;
         content: "";
