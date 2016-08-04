@@ -21,10 +21,35 @@
             padding: 15px 30px;
             font-size: 15px;
             width: 11%;
-            a {
-                color: #FFFFFF;
-                text-decoration: none;
+            position: relative;
+            cursor: pointer;
+            &::before,
+            &::after {
+                content: "";
+                position: absolute;
+                background: #FFFFFF;
+                width: 2px;
+                height: 0%;
+                left: 0px;
+                transition: all 0.4s ease;
             }
+            &:hover {
+                &::before,
+                &::after {
+                    height: 100%;
+                }
+            }
+            &::before {
+                top: 0%;
+            }
+            &::after {
+                left: 100%;
+                bottom: 0%;
+            }
+        }
+        a {
+            color: #FFFFFF;
+            text-decoration: none;
         }
     }
 }

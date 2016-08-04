@@ -1,45 +1,51 @@
 @import "variables.scss";
+@mixin timeline-box() {
+    content: '';
+    position: absolute;
+    top: 13px;
+    height: 23px;
+    width: 0px;
+    border: 10px solid transparent;
+}
+
+@mixin timeline-date() {
+    position: absolute;
+    top: 11%;
+    width: 100%;
+    font-size: 16px;
+}
+
 .resume {
     background-color: $card-color;
     padding: 25px 65px;
     position: relative;
-}
-
-.resume::before {
-    content: '';
-    position: absolute;
-    display: block;
-    top: 0px;
-    left: 50%;
-    width: 4px;
-    background: #d7e4ed;
-    height: 100%;
-    margin-left: -2px;
+    margin-bottom: 50px;
+    &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: 0px;
+        left: 50%;
+        width: 4px;
+        background: #d7e4ed;
+        height: 100%;
+        margin-left: -2px;
+    }
 }
 
 .timeline {
     &__line {
         position: relative;
-        margin: 40px 0px;
+        margin: 25px 0px;
     }
     &__content--left::before {
-        content: '';
-        position: absolute;
-        top: 13px;
+        @include timeline-box();
         left: 100%;
-        height: 23px;
-        width: 0px;
-        border: 10px solid transparent;
         border-left: 16px solid #F1F1F1;
     }
     &__content--right::before {
-        content: '';
-        position: absolute;
-        top: 13px;
+        @include timeline-box();
         right: 100%;
-        height: 23px;
-        width: 0px;
-        border: 10px solid transparent;
         border-right: 16px solid #F1F1F1;
     }
     &__line::after {
@@ -73,5 +79,13 @@
     }
     &__content--right {
         float: right;
+    }
+    &__date-left {
+        @include timeline-date();
+        left: 120%;
+    }
+    &__date-right {
+        @include timeline-date();
+        right: 33%;
     }
 }
