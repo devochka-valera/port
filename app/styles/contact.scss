@@ -19,6 +19,7 @@
             @include card(2);
             border-color: none;
             transition: all ease-in-out 0.15s;
+            outline: none;
         }
     }
     &__textarea {
