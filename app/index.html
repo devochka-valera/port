@@ -194,6 +194,30 @@
 
     <section class="container contact">
         <h3 class="card-header">Contact Information</h3>
+        <div class="row contact__map-container">
+            <div class="contact__map">
+                <img src="images/map.jpg">
+
+            </div>
+            <div class="contact__address col-md-4">
+                <ul>
+                    <li>
+                        <h5>Address</h5>
+                        <p>Russia, Saint-Petersburg</p>
+                    </li>
+
+                    <li>
+                        <h5>Phone</h5>
+                        <a href="tel:+00123456789">+00 (123) 456 789</a>
+                    </li>
+
+                    <li>
+                        <h5>Email</h5>
+                        <p><a href="mailto:name@yourdomain.com">name@yourdomain.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <div>
             <h3 class="card-header">Feel Free To Contact Me</h3>
             <form>
@@ -245,6 +269,7 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVy8UkzutprRXEgWhHbu3lVJjgfDi9sAQ&callback=initMap" async defer></script>
 </body>
 
 </html>
