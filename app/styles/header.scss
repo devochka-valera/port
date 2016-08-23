@@ -68,8 +68,31 @@
 
 @media (max-width:768px) {
     .nav {
-        &__header {
+        &__main-menu {
             display: none;
+        }
+        &__mobile-heading {
+            color: #fff;
+            padding: 15px;
+        }
+        &__container {
+            background: $main-color;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            &--open {
+                ul li {
+                    display: block;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+                    width: 100%;
+                    text-align: left;
+                }
+                .nav__main-menu {
+                    display: block;
+                }
+            }
         }
     }
 }
