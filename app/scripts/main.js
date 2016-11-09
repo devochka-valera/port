@@ -1,9 +1,10 @@
 $(function () {
     var elementPosition = $('#skills').offset().top;
-    function renderSkills(){
+
+    function renderSkills() {
         var currentPosition = window.pageYOffset;
-        if (currentPosition > (elementPosition - $(window).height() * 0.75)
-             && currentPosition < (elementPosition + $('#skills').height())) {
+        if (currentPosition > (elementPosition - $(window).height() * 0.75) &&
+            currentPosition < (elementPosition + $('#skills').height())) {
             $('.skillbar').each(function (i, elem) {
                 $(elem).children('.skillbar__line').width($(elem).children('.skillbar__percent').html());
             });
@@ -59,8 +60,6 @@ $(function () {
         }, 1500);
     });
 
+    $("#phone").mask("+7 (999) 999-9999");
 
-$(function(){
-$("#phone").mask("+7 (999) 999-9999");
-})
 });
