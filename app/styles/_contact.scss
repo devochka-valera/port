@@ -11,10 +11,10 @@
     }
     &__form {
         width: 100%;
-        height: 32px;
+        height: 37px;
         font-size: $main-font-size;
         border: 1px solid #ccc;
-        padding: 18px 26px;
+        padding: 0px 26px;
         &:focus {
             @include card(2);
             border-color: none;

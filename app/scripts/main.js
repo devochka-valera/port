@@ -21,7 +21,7 @@ $(function () {
 
     // // галерея 
     var $overlay = $('<div id="overlay"></div>'),
-        $image = $("<img id='popup_image'>"),
+        $image = $('<img id=\'popup_image\'>'),
         $caption = $('<div class="work__description"></div>'),
         $container = $('<div class="modal__container"></div>');
 
@@ -29,7 +29,7 @@ $(function () {
     $overlay.append($container);
     $container.append($image);
     // add overlay
-    $("body").append($overlay);
+    $('body').append($overlay);
 
     $('#imageGallery a').click(function (e) {
         e.preventDefault();
@@ -50,7 +50,7 @@ $(function () {
     });
 
     //Плавный скролл после нажатия на якорную ссылку
-    $("#menu").on("click", "li", function (event) {
+    $('#menu').on('click', 'li', function (event) {
         event.preventDefault();
         var id = $(this).children().attr('href');
         var top = $(id).offset().top - 30;
@@ -60,6 +60,6 @@ $(function () {
         }, 1500);
     });
 
-    $("#phone").mask("+7 (999) 999-9999");
+    $('#phone').mask('+7 (999) 999-9999');
 
 });
