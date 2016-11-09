@@ -10,8 +10,7 @@
 
 @mixin timeline-date() {
     position: absolute;
-    top: 11%;
-    width: 100%;
+    top: 15px;
     font-size: 16px;
 }
 
@@ -83,22 +82,23 @@
     &__date {
         &--left {
             @include timeline-date();
-            left: 120%;
+           left: 55%;
         }
         &--right {
             @include timeline-date();
-            right: 33%;
+            right: 55%;
+            top: 8%;
         }
     }
 }
 
-@media (max-width:768px) {
+@media (max-width:1080px) {
     .resume {
         padding: 30px;
         &::before {
             left: 18px;
             margin-top: 80px;
-            height: 88%;
+            height: 85%;
         }
     }
     .timeline {

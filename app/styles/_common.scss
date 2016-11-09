@@ -3,7 +3,7 @@
     @if $depth < 1 {
         box-shadow: none;
     }
-    @else if $depth> 5 {
+    @else if $depth>5 {
         @warn "Invalid $depth `#{$depth}` for mixin `card`.";
     }
     @else {
@@ -30,6 +30,10 @@
 
 body {
     background: #FAFAFA;
+    padding-bottom: 70px;
+    @media (max-width: 768px) {
+        padding: 70px 15px;
+    }
 }
 
 .button {
@@ -95,8 +99,7 @@ body {
     right: 0;
 }
 
-@media (max-width: 768px) {
-    body {
-        padding: 70px 15px;
-    }
+pre {
+    background-color: transparent;
+    border: none;
 }

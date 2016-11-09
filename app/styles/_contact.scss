@@ -36,12 +36,17 @@
             border-color: #ccc;
             transition: all ease-in-out 0.15s;
         }
+        &:focus {
+            outline:none;
+        }
     }
     &__btn {
         text-align: right;
         a {
             text-align: center;
             margin: 5px 15px;
+            color:#FFFFFF;
+            text-decoration: none;
         }
     }
     &__map {
